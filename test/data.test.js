@@ -1,5 +1,6 @@
 // IMPORT MODULES under test here:
-import { cars } from './data.js';
+import { cars } from '../data.js';
+import { renderCar } from '../render-utils.js';
 
 const test = QUnit.test;
 
@@ -8,7 +9,7 @@ const test = QUnit.test;
 test('renderCars test', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const expected = `<div class="car-detail"><h2 id="make">Honda</h2><p id="stats">Civic', 'sedan', 'FWD</p>./assets/sedan.png<img id="img" class="newimg"></div>`;
+    const expected = `<li class=\"car\"><a href=\"./car-folder/?id=1\"><img src=\"./assets/./assets/sedan.png.png\"><span class=\"make\">Honda</span><span>Civic,sedan,FWD</span></a></li>`;
     
     //Act 
 
@@ -17,7 +18,7 @@ test('renderCars test', (expect) => {
 
 
     // Call the function you're testing and set the result to a const
-    const actual = cars({ 
+    const actual = renderCar({ 
         id: 1,
         make: 'Honda', 
         stats: ['Civic', 'sedan', 'FWD'],

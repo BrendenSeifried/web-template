@@ -94,3 +94,15 @@ footer {
 a {
     color:white;
 }
+
+img{
+    width:80%;
+}
+
+#carlist {
+    width: 300px;
+    border: 15px solid rgb(0, 0, 0);
+    padding: 50px;
+    margin: 20px;
+    background-color: azure;
+}
