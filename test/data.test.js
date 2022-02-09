@@ -1,5 +1,5 @@
 // IMPORT MODULES under test here:
-import { cars } from '../data.js';
+//import { cars } from '../data.js';
 import { renderCar } from '../render-utils.js';
 
 const test = QUnit.test;
