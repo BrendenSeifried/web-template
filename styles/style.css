@@ -37,6 +37,7 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
+    
 }
 
 section {
@@ -88,4 +89,20 @@ footer {
     justify-content: flex-end;
     background-color: var(--color3);
     box-shadow: var(--shadow);
+}
+
+a {
+    color:white;
+}
+
+img{
+    width:80%;
+}
+
+#carlist {
+    width: 300px;
+    border: 15px solid rgb(0, 0, 0);
+    padding: 50px;
+    margin: 20px;
+    background-color: azure;
 }

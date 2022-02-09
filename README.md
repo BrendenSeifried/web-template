@@ -1,6 +1,11 @@
-## The Golden Rule: 
 
-🦸 🦸‍♂️ `Stop starting and start finishing.` 🏁
+
+1) look through previous programs 
+2) follow animal - farm and follow step by step format
+3) open import-display to grab car functions 
+4) modify animal-farm formatting to fit with import-dispaly car variables 
+5) css
+
 
 If you work on more than one feature at a time, you are guaranteed to multiply your bugs and your anxiety.
 
