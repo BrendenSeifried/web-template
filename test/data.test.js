@@ -9,7 +9,7 @@ const test = QUnit.test;
 test('renderCars test', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const expected = `<li class=\"car\"><a href=\"./car-folder/?id=1\"><img src=\"./assets/./assets/sedan.png.png\"><span class=\"make\">Honda</span><span>Civic,sedan,FWD</span></a></li>`;
+    const expected = `<li class="car"><a href="./car-folder/?id=1"><img src="./assets/./assets/sedan.png.png"><span class="make">Honda</span><span>Civic,sedan,FWD</span></a></li>`;
     
     //Act 
 
