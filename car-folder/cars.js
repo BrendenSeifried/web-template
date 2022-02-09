@@ -26,8 +26,10 @@ const anImg = document.getElementById('img');
 
 const make = document.getElementById('make');
 const stats = document.getElementById('stats');
+console.log(car);
 
 make.textContent = car.make;
+
 stats.textContent = car.stats;
 anImg.src = `../assets/${car.img}.png`;
 
@@ -39,3 +41,4 @@ anImg.src = `../assets/${car.img}.png`;
 //     }
 // }
 // renderCars();
+

@@ -22,11 +22,14 @@ import { renderCar } from './render-utils.js';
 
 const carList = document.querySelector('car');
 
-function renderCars() { 
+// function renderCars() { 
     
-    for (let car of cars) {
-        const div = renderCar(car);
-        carList.append(div);
-    }
+for (let car of cars) {
+    const div = renderCar(car);
+    carList.append(div);
 }
-renderCars();
+// }
+// renderCars();
+
+
+
