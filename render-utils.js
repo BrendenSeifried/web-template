@@ -1,10 +1,9 @@
 export function renderCar(car) {
 
 
-    const div = document.createElement('div');
-    div.classList.add('car');
+    const li = document.createElement('li');
+    li.classList.add('car');
     
-
 
     const a = document.createElement('a');
     a.href = `./car-folder/?id=${car.id}`;
@@ -21,6 +20,6 @@ export function renderCar(car) {
 
 
     a.append(img, nameSpan, span);
-    div.append(a);
-    return div;
+    li.append(a);
+    return li;
 }

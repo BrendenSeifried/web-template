@@ -10,26 +10,17 @@
 import { cars } from './data.js';
 import { renderCar } from './render-utils.js';
   
-// const main = document.querySelector('main');
+
+const carList = document.getElementById('carlist');
+
+function renderCars() { 
   
-// for (let car of cars) {
-//     const carDiv = rendercar(car);
-//     main.append(carDiv);
-// }
-
-
-//const carList = document.getElementById('car');
-
-const carList = document.querySelector('car');
-
-// function renderCars() { 
-    
-for (let car of cars) {
-    const div = renderCar(car);
-    carList.append(div);
+    for (let car of cars) {
+        const div = renderCar(car);
+        carList.append(div);
+    }
 }
-// }
-// renderCars();
+renderCars();
 
 
 

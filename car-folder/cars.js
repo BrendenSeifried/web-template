@@ -14,24 +14,27 @@
 
   
 import { cars } from '../data.js';
-//import { renderCar } from '../render-utils.js';
 import { findById } from '../utils.js';
-
+//import { renderCar } from '../render-utils.js';
 //const carList = document.getElementById('car');
 
 
 const dataStuff = new URLSearchParams(window.location.search);
-const car = findById(dataStuff.get('id'), cars);
+const params = dataStuff.get('id');
+
+const car = findById(params, cars);
 const anImg = document.getElementById('img');
 
 const make = document.getElementById('make');
 const stats = document.getElementById('stats');
-console.log(car);
+//console.log(car, anImg, make, stats, params);
 
 make.textContent = car.make;
 
 stats.textContent = car.stats;
 anImg.src = `../assets/${car.img}.png`;
+
+
 
 // function renderCars() { 
     
